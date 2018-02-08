@@ -1,0 +1,10 @@
+.app {
+	text-align: center;
+}
+.user-wrapper {
+	margin: auto;
+	padding: 20px;
+	border: 1px solid green;
+	width: 400px;
+	height: 400px;
+}
