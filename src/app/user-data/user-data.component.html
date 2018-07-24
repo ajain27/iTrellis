@@ -1,5 +1,23 @@
-<div class="user-data">
-	<ul><li>{{userData.text}} <button type="submit" (click)="remove()">Remove</button><br>
-		<p class="date">{{todayDate | date: "MM/dd/yy hh:mm"}}</p></li>	
-	</ul>	
+<div class="card p-2 mr-3">
+  <div class="row">
+    <div class="col">
+      <ul>
+		<li class="text-left" [ngClass]="{strike: deleted}">{{userData.text}}</li>
+		<p class="date">{{todayDate | date: "MM/dd/yy hh:mm"}}</p>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col text-center">
+          <i class="fa fa-times pointer danger " (click)="remove()" title="Delete"></i>
+        </div>
+        <div class="col text-center">
+            <i class="fa fa-check pointer success" id="user-text" aria-hidden="true" title="Save"></i>
+        </div>
+        <div class="col text-center">
+          <input type="checkbox" name="" id="" [(ngModel)]="deleted" title="Mark as DONE">
+        </div>        
+      </div>
+    </div>
+  </div>
 </div>

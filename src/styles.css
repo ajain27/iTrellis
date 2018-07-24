@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.min.css';
+
+.pointer {
+    cursor: pointer;
+}
+.success {
+    color: #1e7e34
+}
+
+.danger {
+    color: #bd2130;
+}

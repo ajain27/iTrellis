@@ -1,4 +1,8 @@
-<div class="user-input">
-	<input type="text" name="userData" [(ngModel)]="userText" value="{{userText}}" placeholder="Add Something" class="input">
-	<button type="submit" (click)="add()">Add</button>
+<div class="row pb-3">
+  <div class="col">
+    <input type="text" name="userData" [(ngModel)]="userText" value="{{userText}}" placeholder="Add A TODO" class="input">
+  </div>
+  <div class="col">
+    <button type="submit" (click)="add()" class="btn btn-primary">+ TODO</button>
+  </div>
 </div>

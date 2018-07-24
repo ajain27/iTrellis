@@ -2,9 +2,8 @@
 	text-align: center;
 }
 .user-wrapper {
-	margin: auto;
-	padding: 20px;
-	border: 1px solid green;
-	width: 400px;
-	height: 400px;
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
 }

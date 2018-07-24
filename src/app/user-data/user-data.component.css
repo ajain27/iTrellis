@@ -1,4 +1,10 @@
 .date {
 	font-size: 10px;
 	color: grey;
+	float: left;
 }
+
+.strike {
+	color:#bd2130;
+	text-decoration: line-through;
+  }

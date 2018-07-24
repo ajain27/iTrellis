@@ -8,7 +8,7 @@ import { UserService } from '../services/user.service';
 })
 export class UserInputComponent implements OnInit {
 
-	private userText: string;
+  private userText: string;
 	
   constructor(private userService: UserService) {
   this.userText = ""; 
@@ -18,6 +18,9 @@ export class UserInputComponent implements OnInit {
   ngOnInit() { }
 
   add() {
+    if(this.userText == "") {
+      return false;
+    }
   	this.userService.addUserData(this.userText);
     this.userText = "";
   }

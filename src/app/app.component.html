@@ -1,6 +1,8 @@
+<div class="container p-5"></div>
+<h1 class="text-center" style="color: #0062cc">Manage your TODOs !!</h1>
 <div class="app">
   <div class="user-wrapper">
-    <app-header></app-header>
+    <!-- <app-header></app-header> -->
     <app-user-input></app-user-input>
     <div *ngFor="let userData of userService.getUserData();">
     	<app-user-data [userData] = "userData"></app-user-data>
