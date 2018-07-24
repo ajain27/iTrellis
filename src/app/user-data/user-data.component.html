@@ -10,12 +10,15 @@
       <div class="row">
         <div class="col text-center">
           <i class="fa fa-times pointer danger " (click)="remove()" title="Delete"></i>
+          <p class="small-font">Delete</p>
         </div>
         <div class="col text-center">
             <i class="fa fa-check pointer success" id="user-text" aria-hidden="true" title="Save"></i>
+            <p class="small-font">Save</p>
         </div>
         <div class="col text-center">
-          <input type="checkbox" name="" id="" [(ngModel)]="deleted" title="Mark as DONE">
+          <input type="checkbox" name="done" id="done" [(ngModel)]="deleted" title="Mark as DONE" class="pointer">
+          <p class="small-font">Done</p>
         </div>        
       </div>
     </div>
