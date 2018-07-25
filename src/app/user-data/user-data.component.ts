@@ -12,7 +12,8 @@ export class UserDataComponent implements OnInit {
 
 	@Input() userData: Todo;
   public todayDate: Date;
-  private listOfTodoData: any[];
+  private listOfTodoData: any;
+  private sendTodo: any;
 	
   constructor(private userService: UserService) { 
   	this.todayDate = new Date();
@@ -32,6 +33,6 @@ export class UserDataComponent implements OnInit {
   // }
 
   // save() {
-  //   this.saveTodo = this.userService.saveTodo();
+  //   this.sendTodo = this.userService.saveTodo(this.userData);
   // }
 }

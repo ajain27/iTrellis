@@ -36,7 +36,7 @@ export class UserService {
   //   .subscribe(this._getTodosFromAPI = data);
   // }
 
-  // public saveTodo(doneTodo: Todo) {
+  // public saveTodo(doneTodo: any) {
   //   this.http.post('POST URL', this.doneTodo);
   // }
 
