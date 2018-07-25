@@ -1,13 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Todo } from './Todo';
+import { Http } from '@angular/http';
 
 @Injectable()
 export class UserService {
 
   private todos: Todo[];
+  private doneTodo: Todo[];
   private nextId: number;
-
-  constructor() { 
+  private _getTodosFromAPI: any[];
+  constructor(private http: Http) { 
   	this.todos = [];
   	this.nextId = 0;
   }
@@ -25,5 +27,17 @@ export class UserService {
   public removeUserData(id: number) : void {
   	this.todos = this.todos.filter((todo)=> todo.id !== id);
   }
+
+
+  // API calls to get and save TODO 
+
+  // public getTodos() : void {
+  //   this.http.get('URL')
+  //   .subscribe(this._getTodosFromAPI = data);
+  // }
+
+  // public saveTodo(doneTodo: Todo) {
+  //   this.http.post('POST URL', this.doneTodo);
+  // }
 
 }
