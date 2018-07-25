@@ -1,8 +1,11 @@
-<div class="row pb-3">
-  <div class="col">
-    <input type="text" name="userData" [(ngModel)]="userText" value="{{userText}}" placeholder="Add TODO" class="input">
-  </div>
-  <div class="col">
-    <button type="submit" (click)="add()" class="btn btn-primary" style="width: 110px;">+ TODO</button>
-  </div>
-</div>
+<form action="submit" (keydown)="keyDownFunction($event)">
+  <div class="row pb-3">
+    <div class="col">
+      <input type="text" name="userData" [(ngModel)]="userText" value="{{userText}}" placeholder="ADD TODO" class="input">
+    </div>
+    <div class="col">
+      <button type="submit" (click)="add()" class="btn btn-primary" style="width: 110px;">+ TODO</button>
+    </div>
+  </div>  
+</form>
+

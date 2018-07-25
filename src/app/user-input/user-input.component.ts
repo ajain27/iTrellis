@@ -24,4 +24,9 @@ export class UserInputComponent implements OnInit {
   	this.userService.addUserData(this.userText);
     this.userText = "";
   }
+  keyDownFunction(event) {
+    if(event.keyCode == 13) {
+      this.add();
+    }
+  }
 }

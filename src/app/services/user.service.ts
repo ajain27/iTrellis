@@ -9,7 +9,7 @@ export class UserService {
   private doneTodo: Todo[];
   private nextId: number;
   private _getTodosFromAPI: any[];
-  constructor(private http: Http) { 
+  constructor() { 
   	this.todos = [];
   	this.nextId = 0;
   }
